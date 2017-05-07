@@ -35,7 +35,7 @@ module.exports = {
           plugins: []
         }
       },
-      { test: /\.(jpe?g|png|gif|svg)$/i, loader: "file-loader?name=[path][name].[ext]" },
+      { test: /\.(jpe?g|png|gif|svg)$/i, loader: "file-loader?name=[name].[ext]" },
       {
         test: /\.scss$/,
         include: path.resolve(__dirname, "stylesheets"),

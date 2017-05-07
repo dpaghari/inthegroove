@@ -26,10 +26,13 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  height: 100%;
   font-family: $font-stack;
 }
 
 .site-wrapper {
+  display: block;
+  height: 100%;
   width: 100%;
   nav {
     position: fixed;
@@ -90,7 +93,7 @@ body {
         position: absolute;
         height: 9px;
         width: 100%;
-        background: $darkestestMatBlueGray;
+        background: #001449;
         border-radius: 9px;
         opacity: 1;
         left: 0;
@@ -126,19 +129,19 @@ body {
       ul.menu {
         display: block;
       }
-      background-color: $darkestMatBlueGray;
+      background-color: lighten(#001449,15%);
       opacity: 1;
     }
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
     opacity: 0;
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
-    color: white;
+    color: lighten(#001449, 10%);
     font-size: 3em;
     background: none;
     transition: 0.3s all;
@@ -153,7 +156,7 @@ body {
           }
         }
         a {
-          color: $darkestestMatBlueGray;
+          color: lighten(#001449, 5%);
           text-decoration: none;
           transition: 0.2s all;
           &:hover {
@@ -164,4 +167,12 @@ body {
     }
 
   } // end of menu-container
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
