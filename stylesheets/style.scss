@@ -91,7 +91,7 @@ body {
       span {
         display: block;
         position: absolute;
-        height: 9px;
+        height: 6px;
         width: 100%;
         background: #001449;
         border-radius: 9px;
@@ -125,24 +125,30 @@ body {
 
   .menu-container {
     &.active {
-      display: flex;
+      // display: flex;
       ul.menu {
         display: block;
       }
-      background-color: lighten(#001449,15%);
+      right: 0;
+      // background-color: lighten(#001449,15%);
+      background-color: rgba(255,255,255, 0.6);
+
       opacity: 1;
     }
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 3;
     opacity: 0;
     position: fixed;
     top: 0;
-    width: 100%;
+    bottom: 0;
+    right: -30%;
+    width: 30%;
     height: 100%;
-    color: lighten(#001449, 10%);
-    font-size: 3em;
+    // color: lighten(#001449, 10%);
+    color: #fff;
+    font-size: 2em;
     background: none;
     transition: 0.3s all;
     ul.menu {

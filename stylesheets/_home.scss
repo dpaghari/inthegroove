@@ -188,7 +188,7 @@ section.about {
     flex-direction: column;
     width: 50%;
     height: 100%;
-    padding: 24px 0;
+    padding: 48px 0;
     .top, .bottom {
       height: 50%;
       width: 100%;
@@ -238,12 +238,12 @@ section.gallery {
     color: #222;
 
     .gallery-img {
-      line-height: 80vh;
+      line-height: 60vh;
       text-align: center;
       font-size: 5vw;
       margin: 0 auto;
       width: 100%;
-      height: 80vh;
+      height: 60vh;
       border: 1px solid #333;
     }
 
@@ -252,7 +252,11 @@ section.gallery {
 }
 
 section.dance-teams {
+  background: #333;
   height: auto;
+  h4 {
+    color: white;
+  }
   .team-entry {
     clear: both;
     width: 100%;
@@ -264,7 +268,8 @@ section.dance-teams {
         font-size: 4vw;
         max-width: 400px;
         margin: 0 auto;
-        color: #222;
+        // color: #222;
+        color: #fff;
 
         .gallery-img {
           // line-height: 80vh;
@@ -273,7 +278,8 @@ section.dance-teams {
           margin: 0 auto;
           width: 100%;
           height: 30vh;
-          border: 1px solid #333;
+          // border: 1px solid #333;
+          border: 1px solid #fff;
         }
 
 
@@ -283,12 +289,14 @@ section.dance-teams {
       float: right;
       width: 49%;
       h6 {
-        font-size: 3vw;
+        font-size: 2.5vw;
+        color: white;
       }
       ul {
         li {
           margin: 8px auto;
-          font-size: 2vw;
+          font-size: 1.8vw;
+          color: white;
         }
       }
     }
