@@ -18,6 +18,9 @@ switch ($action) {
 		if($data['valid']) header("Location: /admin.php" );
 		break;
 
+	case 'retrieve_instructors': 
+	break;
+
 	case 'set_schedule' :
 		$_POST = json_decode(file_get_contents('php://input'), true);
 		$name = isset($_POST["name"]) ? $_POST["name"] : null;

@@ -1,3 +1,10 @@
+<?php
+require_once('services/ScheduleManager.php');
+$scheduleMgr = new ScheduleManager();
+
+
+ ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,6 +13,7 @@
   </head>
   <body>
     <main class="site-wrapper">
+      <?php $scheduleMgr->build_schedule(); ?>
       <h1>Current Schedule</h1>
       <div class="current-schedule">
         <h2 class="current-date"></h2>
